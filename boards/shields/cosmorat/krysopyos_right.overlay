@@ -64,6 +64,7 @@
         zephyr,axis-x = <INPUT_REL_X>;
         zephyr,axis-y = <INPUT_REL_Y>;
         res-cpi = <1600>;
+        invert-y;  /* was CONFIG_PMW3610_SWAP_XY: swap X/Y for sensor orientation */
         force-awake;
     };
 };
