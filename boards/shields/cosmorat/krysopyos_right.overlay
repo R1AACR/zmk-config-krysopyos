@@ -73,3 +73,7 @@
     status = "okay";
     device = <&trackball>;
 };
+
+&trackball_listener {
+    status = "okay";
+};
