@@ -37,6 +37,10 @@
     status = "disabled";
 };
 
+&soft_off_wakers {
+    wakeup-sources = <&mock_kscan>;
+};
+
 &trackball_listener {
     status = "okay";
     input-processors = <&zip_temp_layer 4 2000 &zip_xy_scaler 1 1>;
