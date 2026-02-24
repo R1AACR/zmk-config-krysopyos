@@ -4,9 +4,6 @@ manifest:
       url-base: https://github.com/zmkfirmware
     - name: badjeff
       url-base: https://github.com/badjeff
-    - name: nrfconnect
-      url-base: https://github.com/nrfconnect
-    # Recommended by zmk-feature-split-esb: use badjeff's patched NCS for ESB/MPSL (e.g. __ptr__radio_dynamic_irq_handler)
   projects:
     - name: zmk
       remote: zmkfirmware
@@ -18,17 +15,5 @@ manifest:
     - name: zmk-behavior-mouse-key-toggle
       remote: badjeff
       revision: main
-    - name: zmk-feature-split-esb
-      remote: badjeff
-      revision: main
-    - name: sdk-nrf
-      remote: badjeff
-      revision: v3.1-branch+zmk-fixes
-      path: nrf
-    - name: nrfxlib
-      remote: nrfconnect
-      revision: v3.1-branch
-      repo-path: sdk-nrfxlib
-      path: nrfxlib
   self:
     path: config
